@@ -8,7 +8,7 @@ class Obstacle {
       this.height = this.image.height;
     };
     this.image.src = imageSrc;
-    this.speed = 3; //initial speed
+    this.speed = 3.5; //initial speed
     this.direction = 1;
   }
 
@@ -29,7 +29,7 @@ class Obstacle {
       this.direction *= -1;
     }
     //increase speed over time
-    this.speed += 0.01;
+    this.speed += 0.03;
     this.draw();
   }
 }

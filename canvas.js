@@ -1,4 +1,4 @@
-//get canvas element and context
+//get canvas element -->
 //html canvas --> used to draw graphics,
 const canvas = document.querySelector("canvas");
 const c = canvas.getContext("2d");
@@ -18,7 +18,7 @@ const background = new Background({
 });
 
 //gravity
-const gravity = 1;
+const gravity = 1.3;
 
 //player implementation
 const player = new Player({
