@@ -28,6 +28,7 @@ class Obstacle {
     if (this.position.x + this.width > canvas.width || this.position.x < 0) {
       this.direction *= -1;
     }
+    //
     //increase speed over time
     this.speed += 0.03;
     this.draw();
