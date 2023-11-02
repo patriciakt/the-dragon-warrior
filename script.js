@@ -43,9 +43,9 @@ function startGame() {
 
       player.velocity.x = 0;
       if (keys.ArrowRight.pressed) {
-        player.velocity.x = 7;
+        player.velocity.x = 9;
       } else if (keys.ArrowLeft.pressed) {
-        player.velocity.x = -7;
+        player.velocity.x = -9;
       }
     } else {
       endGame();

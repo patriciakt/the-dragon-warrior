@@ -18,7 +18,7 @@ const background = new Background({
 });
 
 //gravity
-const gravity = 1.3;
+const gravity = 2.5;
 
 //player implementation
 const player = new Player({

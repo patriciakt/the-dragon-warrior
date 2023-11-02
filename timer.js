@@ -1,7 +1,7 @@
 const timerDisplay = document.getElementById("timer");
 
 //set game duration
-let gameTime = 5;
+let gameTime = 90;
 let countdownInterval;
 
 //update timer display
