@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="game-start-screen">
+        <h1>The Dragon Warrior</h1>
+        <!--<img id="logo" src="/images/dragonwarriorlogo.jpeg" alt="mastershifu" />-->
+        <button id="start-button">Start</button>
+        <p id="instructions">Use arrow keys to move and space bar to jump</p>
+        <p id="Tailung">
+          Beware! Tailung is after you, and he's only getting faster
+        </p>
+      </div>
+
+      <div id="game-screen">
+        <div id = "lives">Lives: 8</div>
+        <div id = "timer">Time remaining: 90</div>
+        <canvas id="canvas"></canvas>
+        </div>
+      </div>
+
+      <div id="end-screen">
+        <p>Game Over</p>
+        <button id="restart-button">Restart</button>
+      </div>
+    </main>
+
+    <script src="classes/background.js"></script>
+    <script src="classes/player.js"></script>
+    <script src="classes/obstacle.js"></script>
+    <script src="canvas.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

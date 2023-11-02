@@ -1,0 +1,54 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+#game-start-screen {
+  background-image: "/images/firststartscreen.jpeg";
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 35px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 150px;
+}
+
+#start-button {
+  background-color: white;
+  border: "none";
+  padding: 20px 20px;
+  font-size: 35px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#start-button:hover {
+  background-color: beige;
+}
+
+#lives {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  color: black;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#end-screen {
+  background-image: "/images/endscreen.jpeg";
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 35px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
