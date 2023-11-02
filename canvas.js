@@ -14,7 +14,7 @@ const background = new Background({
     y: 0,
   },
   imageSrc:
-    "/images/china-landscape-2d-sunset-more-red-and-yellow-b-upscaled (1).png",
+    "./images/china-landscape-2d-sunset-more-red-and-yellow-b-upscaled (1).png",
 });
 
 //gravity
@@ -44,7 +44,7 @@ const obstacle = new Obstacle({
     x: 0,
     y: innerHeight - 200,
   },
-  imageSrc: "/images/tailung.png",
+  imageSrc: "./images/tailung.png",
 });
 
 //lives update
