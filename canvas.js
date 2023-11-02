@@ -1,4 +1,5 @@
 //get canvas element and context
+//html canvas --> used to draw graphics,
 const canvas = document.querySelector("canvas");
 const c = canvas.getContext("2d");
 //c = context;
@@ -48,9 +49,7 @@ const obstacle = new Obstacle({
 
 //lives update
 const livesCounter = document.getElementById("lives");
-
-let lives = 8;
-livesCounter.innerHTML = lives; //set initial value
+let lives = 5;
 
 //update lives
 function updateLives() {

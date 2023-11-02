@@ -2,11 +2,14 @@ const startScreen = document.getElementById("game-start-screen");
 const startButton = document.getElementById("start-button");
 const gameScreen = document.getElementById("game-screen");
 const endScreen = document.getElementById("end-screen");
+const winScreen = document.getElementById("win-screen");
 const restartButton = document.getElementById("restart-button");
+const trainingButton = document.getElementById("training-button");
 
 //initial visibility
 gameScreen.style.display = "none";
 endScreen.style.display = "none";
+winScreen.style.display = "none";
 
 //keep track of game state
 let gameInProgress = false;
@@ -15,16 +18,17 @@ let gameInProgress = false;
 startButton.addEventListener("click", () => {
   if (!gameInProgress) {
     startGame();
+    startTimer();
   }
 });
 
 function startGame() {
-  player.lives = 8;
-  livesCounter.innerHTML = player.lives;
+  player.lives = 5;
 
   startScreen.style.display = "none";
   gameScreen.style.display = "block";
   endScreen.style.display = "none";
+  winScreen.style.display = "none";
 
   gameInProgress = true;
 
@@ -79,9 +83,23 @@ restartButton.addEventListener("click", () => {
   location.reload();
 });
 
-//end game
+//training button (restart)
+trainingButton.addEventListener("click", () => {
+  location.reload();
+});
+
+//end game when lost
 function endGame() {
   gameInProgress = false;
   gameScreen.style.display = "none";
   endScreen.style.display = "block";
+  winScreen.style.display = "none";
+}
+
+//game won
+function winGame() {
+  gameInProgress = false;
+  gameScreen.style.display = "none";
+  endScreen.style.display = "none";
+  winScreen.style.display = "block";
 }

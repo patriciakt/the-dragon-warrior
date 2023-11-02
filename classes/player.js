@@ -11,6 +11,9 @@ class Player extends Background {
 
   //update player positions
   update() {
+    if (gameTime === 0 || lives === 0) {
+      return;
+    }
     this.draw();
     this.position.x += this.velocity.x;
     this.position.y += this.velocity.y;
@@ -30,8 +33,8 @@ class Player extends Background {
       console.log("collision");
       updateLives();
       obstacle.speed = 3;
-      this.position.x = 200;
-      obstacle.position.x = 750;
+      this.position.x = 100;
+      obstacle.position.x = 500;
     }
   }
 }

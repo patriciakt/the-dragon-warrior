@@ -18,6 +18,9 @@ class Obstacle {
   }
 
   update() {
+    if (gameTime === 0) {
+      return;
+    }
     //move obstacle along x axis
     this.position.x += this.speed * this.direction;
 
@@ -27,7 +30,6 @@ class Obstacle {
     }
     //increase speed over time
     this.speed += 0.01;
-
     this.draw();
   }
 }
