@@ -32,7 +32,8 @@ Lose: Tai Lung gets to you and all lives are lost.
 
 - Choose your character
 - Power ups for Panda (player): collect power ups for attack --> 
-- Attack/Fight: if collision occurs, create an attack feature (
+- Attack/Fight: if collision occurs, create an attack feature
+- win scenario --> move on to next level
 
 
 
